@@ -16,7 +16,7 @@
 <meta property="og:description" content="链表介绍链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。 单链表及其操作链表中最">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg">
-<meta property="og:updated_time" content="2019-03-10T01:41:08.264Z">
+<meta property="og:updated_time" content="2019-03-10T01:46:16.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构之单链表">
 <meta name="twitter:description" content="链表介绍链表（Linked list）是一种常见的基础数据结构，是一种线性表，但是并不会按线性的顺序存储数据，而是在每一个节点里存到下一个节点的指针(Pointer)。由于不必须按顺序存储，链表在插入的时候可以达到O(1)的复杂度，比另一种线性表顺序表快得多，但是查找一个节点或者访问特定编号的节点则需要O(n)的时间，而顺序表相应的时间复杂度分别是O(logn)和O(1)。 单链表及其操作链表中最">
@@ -124,6 +124,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -229,8 +233,136 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
     
         
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    
+                        <img class="image is-128x128 has-mb-6" src="/images/avatar1.jpg" alt="王清">
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        王清
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        PHP开发工程师
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>地球村</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        1
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="/">
+                关注我</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/wsleep">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                目录
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#链表介绍">
+        <span class="has-mr-6">1</span>
+        <span>链表介绍</span>
+        </a></li><li>
+        <a class="is-flex" href="#单链表及其操作">
+        <span class="has-mr-6">2</span>
+        <span>单链表及其操作</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#基本操作">
+        <span class="has-mr-6">2.1</span>
+        <span>基本操作</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#实现单链表">
+        <span class="has-mr-6">3</span>
+        <span>实现单链表</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#定义一个Node类">
+        <span class="has-mr-6">3.1</span>
+        <span>定义一个Node类</span>
+        </a></li><li>
+        <a class="is-flex" href="#定义一个SingleList类">
+        <span class="has-mr-6">3.2</span>
+        <span>定义一个SingleList类</span>
+        </a></li><li>
+        <a class="is-flex" href="#末尾插入">
+        <span class="has-mr-6">3.3</span>
+        <span>末尾插入</span>
+        </a></li><li>
+        <a class="is-flex" href="#根据索引插入">
+        <span class="has-mr-6">3.4</span>
+        <span>根据索引插入</span>
+        </a></li><li>
+        <a class="is-flex" href="#根据索引删除">
+        <span class="has-mr-6">3.5</span>
+        <span>根据索引删除</span>
+        </a></li><li>
+        <a class="is-flex" href="#根据索引搜索节点">
+        <span class="has-mr-6">3.6</span>
+        <span>根据索引搜索节点</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 
